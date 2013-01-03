@@ -1,0 +1,151 @@
+
+   <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+ 
+       <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+          <TextView
+              android:id="@+id/textView1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_column="0"
+              android:layout_span="4"
+              android:text="@string/massConversion"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       </TableRow>  
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toConvert"
+                android:layout_column="0"
+                android:layout_span="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_column="1"
+                android:layout_span="3"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+       <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+           <TextView
+               android:id="@+id/textView3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/convertedValue"
+              android:layout_column="0"
+               android:layout_span="1"
+               android:textAppearance="?android:attr/textAppearanceMedium" />
+
+           <TextView
+               android:id="@+id/txtConvertedValue"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="1"
+               android:layout_span="3"
+               android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       </TableRow>
+       
+      <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+       </TableRow>
+       
+       
+       <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_column="0"
+                android:layout_span="3"/>
+           
+       </TableRow>  
+       
+       <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+           <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_column="0"
+                android:layout_span="3"/>
+           
+       </TableRow>
+       <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+       </TableRow>
+       
+       <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+       </TableRow>
+       
+       <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+       </TableRow>
+
+       <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+       </TableRow>
+       <TableRow
+           android:id="@+id/tableRow11"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" >
+
+           <Button
+               android:id="@+id/button1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="0"
+               android:layout_span="1"
+               android:onClick="convert"
+               android:text="@string/Convert" />
+
+           <Button
+               android:id="@+id/button2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_column="1"
+               android:layout_span="1"
+               android:onClick="home"
+               android:text="@string/home" />
+
+       </TableRow>
+
+    </TableLayout>
